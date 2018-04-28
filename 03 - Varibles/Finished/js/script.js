@@ -16,7 +16,7 @@ var v1 = 'String';
 var v2 = 777;
 var v3 = true;
 var v4 = null;
-var v5; // Да, по умолчанию undefinded, но можно было ее и присвоить)
+var v5 = undefined; // Да, по умолчанию undefinded, но можно было ее и присвоить)
 
 
 
@@ -32,19 +32,19 @@ var v5; // Да, по умолчанию undefinded, но можно было е
 var sideA = 7;
 var sideB = 8;
 var sideC = 9;
-perimetr = sideA + sideB + sideC;
-console.info('Периметр треугольника = ', perimetr);
-p = perimetr / 2;
-console.info('Полупериметр треугольника = ', p);
-radius_vpis_triugolnik = Math.sqrt(((p - sideA) * (p - sideB) * (p - sideC)) / p);
-console.info('Радиус вписаный в окружности треугольника = ', radius_vpis_triugolnik); // В языке js принята нотация camelCase а не snake_case. Поэтому лучше переменную назвать radiusVpisTriugolnik. Так же лучше писать англ названия англ значениями
+var perimetr = sideA + sideB + sideC;
+console.info('Perimeter of a triangle = ', perimetr);
+var p = perimetr / 2;
+console.info('Half-diameter of a triangle = ', p);
+var radiusDiscribedTriangle = Math.sqrt(((p - sideA) * (p - sideB) * (p - sideC)) / p);
+console.info('Radius inscribed in a triangle = ', radiusDiscribedTriangle); // В языке js принята нотация camelCase а не snake_case. Поэтому лучше переменную назвать radiusVpisTriugolnik. Так же лучше писать англ названия англ значениями
 
 // Прежде чем работать с переменными неплохо их обьявлятью. (perimetr, radius_vpis_triugolnik) В режиме "use strict" это выдаст ошибку
 
-sideC_Pryamougl_Treugl = Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2)); // Так же нужно обьявлять переменные через var
-p_Pryamougl_Treugl = (sideA + sideB + sideC_Pryamougl_Treugl) / 2;
-radius_vpis_pryamougl_triugolnik = Math.sqrt(((p_Pryamougl_Treugl - sideA) * (p_Pryamougl_Treugl - sideB) * (p_Pryamougl_Treugl - sideC_Pryamougl_Treugl)) / p_Pryamougl_Treugl);
-console.info('Радиус вписанный в окружности прямоугольного треугольника = ', radius_vpis_pryamougl_triugolnik);
+var sideCRightTreungl = Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2)); // Так же нужно обьявлять переменные через var
+var pRightTreungl = (sideA + sideB + sideCRightTreungl) / 2;
+var radiusVpisPryamouglTreungl = Math.sqrt(((pRightTreungl - sideA) * (pRightTreungl - sideB) * (pRightTreungl - sideCRightTreungl)) / pRightTreungl);
+console.info('The radius of the inscribed circle in a right triangle = ', radiusVpisPryamouglTreungl);
 
 // ## 3 Названия переменных
 //

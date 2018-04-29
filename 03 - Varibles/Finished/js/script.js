@@ -68,11 +68,11 @@ var borderTopRight;
 // * Выведите в консоли значение ключа обьекта из файла index.html
 
 var user = {
-  vasia: 'Вася', // Русские символы ненадо использовать
-  petya: 'Вася'
+  name: 'Vasia',
 }
-console.log(user.vasia);
-console.log(user.petya);
+user.name = 'Petya';
+
+console.log(user.name);
 
 
 

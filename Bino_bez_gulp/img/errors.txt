@@ -1,0 +1,3 @@
+[2018-04-23 14:29:08] layer "Chris Waldron ChrisWaldron.com": Unsupported extension: com
+[2018-04-23 14:29:08] layer "contactus@email.com": Unsupported extension: com
+[2018-04-23 14:29:08] layer "+ 880 168 109 1425 + 0216809142": Expected Either a default asset specification or a layer asset specification but "+" found.

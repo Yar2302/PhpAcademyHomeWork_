@@ -9,12 +9,12 @@ console.clear();
 
 var phoneNumber = prompt('Please enter you phone number', 0);
 
-if(phoneNumber <== 9) {
+if(phoneNumber <= 9) {
   console.error('Your phone number is lower')
-} else if(phoneNumber >== 11) {
-  console.error('Your phone number is lower')
+} else if(phoneNumber >= 11) {
+  console.error('Your phone number is longer')
 } else {
-  console.info('Your phone number is lower')
+  console.info('Your phone number is not valid')
 }
 
 // * Your code End *
@@ -64,6 +64,8 @@ var year = date.getFullYear(); // Текущий год
 var monthName = ''; // Переменная для значения
 
 // * Your code Start *
+
+// 1 Вариант
 switch (month) {
 	case 0:
 		monthName = 'Января';
@@ -103,10 +105,14 @@ switch (month) {
 		break;
 }
 
+// 2 Вариант (Более короткий)
+const months = ['Января', 'Февраля', 'Марта', 'Апреля', 'Мая', 'Июня', 'Июля', 'Августа', 'Сентября', 'Октября', 'Ноября', 'Декабря']
+
 
 // * Your code End *
 
-console.log(`Today is: ${day} ${monthName} ${year}`) // Пример: 14 Июня 2017
+console.log(`Today is: ${day} ${monthName} ${year}`) // Первый вариант
+console.log(`Today is: ${day} ${months[month]} ${year}`) // Второй вариант
 
 
 

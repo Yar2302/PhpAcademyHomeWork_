@@ -2,61 +2,36 @@ body {
   font-family: Arial, sans-serif;
   padding: 0;
   margin: 0;
-
 }
-
-.clearfix:after {
-  content: '';
-  display:table;
-  width: 100%;
-  clear: both;
-  }
-
 div {
   box-sizing: border-box;
 }
-
 header {
   background: url(./img/Background.png) no-repeat center top / cover;
 
 }
-
 .container {
   width: 1170px;
   margin: 0 auto;
 }
-
-.logo {
-margin-top: 40px;
-float: left;
+a {
+  color: #dcdce1;
 }
-
-nav {
-  float: right;
-  margin-top: 50px;
+.container_main_menu_logo {
+  display: inline-flex;
+  justify-content:space-between;
+  width: 1170px;
+  margin-top: 60px;
 }
-
-.menu {
-  padding: 0;
-  margin: 0;
-  display: block;
-}
-
-.menu li {
-  float: left;
-  display: block;
-  margin-right: 60px;
-}
-.menu li a {
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
+.container_main_menu {
+  display: flex;
+  justify-content: space-between;
+  width: 740px;
   font-size: 14px;
 }
-.menu li a:hover {
+ a:hover {
   text-decoration-line: underline;
   color: #e74c3c
-
   }
 .tittless_first {
   font-size: 24px;
@@ -79,7 +54,6 @@ h1 {
 .bottons {
   display: flex;
   justify-content: center;
-
 }
 .button {
   background: #e74c3c;
@@ -98,12 +72,100 @@ font-weight: bold;
 margin-bottom: 250px;
 border: 1px solid white;
 }
-
 .button:hover {
   background: transparent;
 }
 .yakor {
-  float: left;
-  margin-left: 550px;
+  display: flex;
+  justify-content: center;
   margin-top: -40px;
 }
+.container_second_menu {
+  margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+}
+.text_second_menu a {
+  color: #b5b5b5;
+  font-size: 18px;
+  text-decoration-line: none;
+}
+.conteiner_1_1 {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 250px;
+height: 220px;
+
+  }
+
+.text_lorem {
+  font-size: 12px;
+  text-align: center;
+  color: #737373;
+}
+.text_desing {
+  font-size: 18px;
+  text-align: center;
+  color: #737373;
+}
+h2:hover {
+  color: #e74c3c;
+}
+
+.cont div:hover + h2 {
+  color: red;
+}
+
+.container_2_1 {
+  margin: 0 auto;
+  display: flex;
+  width: 70px;
+  height: 70px;
+  border: 1px solid #e5e5e5;
+  align-items: center;
+  justify-content: center;
+}
+.df {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.container_2_1, h2:hover {
+   border-color: #e74c3c;
+}
+
+.color_buckground {
+  background-size: 100%;
+
+  background: #f4f5f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h3 {
+font-sise: 36px;
+color: #6a6a6a;
+text-transform: uppercase;
+}
+
+.text_lorem_our_history {
+  font-size: 14px;
+  text-align: left;
+  color: #737373;
+}
+
+.container_third_menu {
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 1170px;
+    padding-bottom: 120px;
+}
+
+.

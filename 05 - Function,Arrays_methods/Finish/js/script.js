@@ -73,14 +73,33 @@ var funcArrays = function () {
 }
   return arr;
 }
+*/
+/*
+var funcArrays = function () {
+  var arr = [];
+
+  for (let i = 0; i < 5; i++) {
+    arr.push(function() {
+      return i
+    });
+  }
+
+  return arr;
+}
+*/
+
+/*
+
 // * Your code End *
 var func = funcArrays();
 console.log(func[1]()); // Выводит 5, а должно вывести 1
 console.log(func[3]()); // Выводит 5, а должно вывести 3
-// =============================================================================
-// =============================================================================
-// =============================================================================
+
 */
+// =============================================================================
+// =============================================================================
+// =============================================================================
+
 
 
 // ## Callback функции
@@ -153,7 +172,7 @@ console.log(concatArrayWithString(arrayData, stringDataTwo, ' ')); // Вывод
 // Задача создать 4 функции которые создают новый массив ()
 // Во всех случаях за основу берется массив itDepartment
 // Помните что работаете с обектами. Соотвецтвенно для сравнения вам нужно работать с ключами обьекта
-
+/*
 var itDepartment = [
   { first: 'Philip', last: 'Bradley', born: 1979, possition: 'Back-end' },
   { first: 'Phil', last: 'Harmon', born: 1983, possition: 'Front-end' },
@@ -163,8 +182,12 @@ var itDepartment = [
   { first: 'Reynard', last: 'Christopher', born: 1973, possition: 'QA' },
   { first: 'Max', last: 'Forrest', born: 1988, possition: 'Manager' },
 ];
+*/
+
+
 //console.log(itDepartment);
 // * Your code Start *
+
 /*
 const fullNames = itDepartment.map(function(item, key, arr) {
       return item.first + ' ' + item.last;
@@ -181,16 +204,29 @@ const filtered = itDepartment.filter(function(item, key, arr) {
 console.log(filtered);
 */
 
-const sorted = sort.filter(item, key, arr) {
-  return sortObject(item.born);
+/*
+var date = new Date();
+const sorted = itDepartment.sort(function(itemA, itemB){
+    return date.getFullYear() - itemA.born > date.getFullYear() - itemB.born
   });
 console.log(sorted);
-
+*/
 /*
-const counter = sort.filter(/* Your function /)
+const counter = itDepartment.reduce(function(obj, item) {
+  var possition = item.possition;
+  if(!obj[possition]) {
+    obj[possition] = 0; }
+
+      obj[possition] += 1;
+
+    return obj;
+  }, {});
+console.log(counter);
+
+*/
 
 // * Your code End *
-
+/*
 // map(); Создайте массив в котором будут имена и фамилии всех работников It департамента. (В формате Philip Bradley)
 console.dir(fullNames);
 
